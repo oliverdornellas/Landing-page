@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:Petjustbubble;
+    src: url('/fonts/JustBubble.ttf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face{
+    font-family:Petmount;
+    src: url('/fonts/Mount\ Hills.otf');
+    font-weight: normal;
+}
+
+:root {
+    --cor-destaque: #F7F6F2;
+    --cor-fundo:#675b56;
+    --cor-textos:  #FCB804;
+    --fonte-titulo: 'Petjustbubble';
+    --font-main: 'Petmount';
+}
+
+
+    
+      
+
+
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-destaque);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial;
+    max-width: 1600px;
+    padding: 20px;
+}
+
+header{
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#title{
+    box-shadow:5px 10px 10px  #61534e98;
+    flex-direction: column;   
+    line-height:7px;
+    font-size: 40px;
+    font-family: var(--fonte-titulo);
+}
+
+li{
+    display: inline-block;
+    margin: 10px;
+    margin-left: -15px;
+    padding: 20px;
+}
+
+a{
+    color: var(--cor-destaque);
+    box-shadow: 5px 10px 10px #7c6a63;
+}
+
+a:hover{
+    border-radius: 20px;
+    background-color: #FCB804;
+    color:var(--cor-destaque)
+    
+    
+}
+
+h1{
+    font-weight: 200;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+h2{
+    font-size: 65px;
+    line-height: 52px;
+}
+span{
+   color: var(--cor-textos);
+}
+p{
+    line-height: 20px;
+    
+}
+
+form [type="submit"]{
+    width: 30%;
+    height: 50px;
+    padding: 15px;
+    font-size: 20px;
+    background-color:var(--cor-textos);
+    color: var(--cor-destaque);
+    
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+input{
+    margin-top: 15px;
+    height: 30px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+}
+
+
+img{
+    width: 850px;
+    margin: 15px;
+    margin-left: 100px;
+}
+
+#dog{
+    width:220px ;
+    padding: 5px;
+}
+
+#cat{
+    width: 350px;
+}
+
+
+
